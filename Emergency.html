@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Services - Barangay 118</title>
+    <link rel="shortcut icon" type="image/png" href="Logo-Favicon-removebg-preview.png">
+    <meta name="description" content="Emergency contacts, procedures, and services for Barangay 118 residents">
+    <meta name="keywords" content="emergency, barangay emergency, fire, police, ambulance, emergency contacts">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Emergency.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <!-- LOGO -->
+                <a href="index.html" id="home-logo" class="logo">
+                    <img src="Logo-Favicon-removebg-preview.png" alt="Barangay 118 Logo" class="logo-image">
+                    <h1 id="system-name">BARANGAY 118 ONLINE SYSTEM</h1>
+                </a>
+
+                <!-- NAVIGATION -->
+                <nav class="nav-links">
+                    <a href="index.html" aria-label="Home page">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="AboutUs.html" aria-label="About Barangay 118 page">
+                        <i class="fas fa-info-circle"></i>
+                        <span>About Us</span>
+                    </a>
+                    <a href="News.html" aria-label="Barangay News page">
+                        <i class="fas fa-newspaper"></i>
+                        <span>News</span>
+                    </a>
+                    <a href="Emergency.html" class="active" aria-label="Barangay Emergency page">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Emergency</span>
+                    </a>
+                    <a href="CreateAnAccount.html" aria-label="Create an account page">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Create Account</span>
+                    </a>
+                    <a href="LogIn.html" aria-label="Login page">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>Login</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<!-- Hero Section -->
+<section class="emergency-hero">
+  <div class="container">
+    <div class="emergency-hero-content">
+      <h1>Emergency Assistance</h1>
+      <p>Immediate help and emergency contacts reach out now if you need urgent support.</p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="container">
+            <h2 class="section-title">Quick Emergency Actions</h2>
+            <div class="quick-actions-grid">
+                <div class="action-card danger">
+                    <div class="action-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Medical Emergency</h3>
+                    <p>For ambulance and medical assistance</p>
+                    <div class="action-number emergency-pulse">911</div>
+                    <a href="tel:911" class="action-btn danger">Call Now</a>
+                </div>
+                
+                <div class="action-card warning">
+                    <div class="action-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Fire Emergency</h3>
+                    <p>For fire department and rescue</p>
+                    <div class="action-number">(02) 8426-0219</div>
+                    <a href="tel:0284260219" class="action-btn">Call Fire Dept</a>
+                </div>
+                
+                <div class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Police Emergency</h3>
+                    <p>For crime reporting and police assistance</p>
+                    <div class="action-number">117</div>
+                    <a href="tel:117" class="action-btn">Call Police</a>
+                </div>
+                
+                <div class="action-card success">
+                    <div class="action-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Barangay Hotline</h3>
+                    <p>For barangay-related emergencies</p>
+                    <div class="action-number">(02) 8123-4567</div>
+                    <a href="tel:0281234567" class="action-btn success">Call Barangay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Emergency Contacts -->
+    <section class="emergency-contacts">
+        <div class="container">
+            <h2 class="section-title">Emergency Contacts Directory</h2>
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <div class="contact-icon medical">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <h3 class="contact-title">Emergency Medical Services</h3>
+                    </div>
+                    <div class="contact-number">911</div>
+                    <p class="contact-description">24/7 ambulance service and emergency medical response. For heart attacks, strokes, accidents, and other medical emergencies.</p>
+                    <div class="contact-hours">
+                        <h4>Available</h4>
+                        <p>24 hours / 7 days a week</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <div class="contact-icon fire">
+                            <i class="fas fa-fire-extinguisher"></i>
+                        </div>
+                        <h3 class="contact-title">Caloocan Fire Department</h3>
+                    </div>
+                    <div class="contact-number">(02) 8426-0219</div>
+                    <p class="contact-description">Fire emergencies, rescue operations, hazardous material incidents, and other fire-related emergencies.</p>
+                    <div class="contact-hours">
+                        <h4>Available</h4>
+                        <p>24 hours / 7 days a week</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <div class="contact-icon police">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="contact-title">Caloocan Police Department</h3>
+                    </div>
+                    <div class="contact-number">117 or (02) 8292-1111</div>
+                    <p class="contact-description">Police assistance, crime reporting, traffic accidents, and public safety concerns.</p>
+                    <div class="contact-hours">
+                        <h4>Emergency Hotline</h4>
+                        <p>117 (24/7) or local station</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <div class="contact-icon barangay">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="contact-title">Barangay 118 Emergency</h3>
+                    </div>
+                    <div class="contact-number">(02) 8123-4567</div>
+                    <p class="contact-description">Barangay-specific emergencies, local disputes, neighborhood watch, and community assistance.</p>
+                    <div class="contact-hours">
+                        <h4>Office Hours</h4>
+                        <p>8:00 AM - 5:00 PM (Mon-Fri)<br>Emergency: 24/7 on-call</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <div class="contact-icon medical">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h3 class="contact-title">Caloocan City Medical Center</h3>
+                    </div>
+                    <div class="contact-number">(02) 8292-1111</div>
+                    <p class="contact-description">Nearest public hospital for medical emergencies, consultations, and emergency room services.</p>
+                    <div class="contact-hours">
+                        <h4>Emergency Room</h4>
+                        <p>24 hours / 7 days a week</p>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <div class="contact-icon barangay">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="contact-title">Barangay 118 Disaster Council</h3>
+                    </div>
+                    <div class="contact-number">0999-123-4567</div>
+                    <p class="contact-description">Disaster response team for typhoons, floods, earthquakes, and other natural disasters.</p>
+                    <div class="contact-hours">
+                        <h4>Emergency Contact</h4>
+                        <p>Mobile: 24/7 during disasters</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Procedures -->
+    <section class="emergency-procedures">
+        <div class="container">
+            <h2 class="section-title">Emergency Procedures</h2>
+            
+            <div class="procedures-tabs">
+                <div class="procedure-tab active" data-procedure="fire">Fire Emergency</div>
+                <div class="procedure-tab" data-procedure="medical">Medical Emergency</div>
+                <div class="procedure-tab" data-procedure="earthquake">Earthquake</div>
+                <div class="procedure-tab" data-procedure="typhoon">Typhoon/Flood</div>
+                <div class="procedure-tab" data-procedure="crime">Crime Incident</div>
+            </div>
+            
+            <div class="procedure-content">
+                <div class="procedure-list" id="fire-procedure">
+                    <div class="procedure-step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <h4>Raise the Alarm</h4>
+                            <p>Shout "Fire!" to alert everyone in the building. Pull the nearest fire alarm if available.</p>
+                        </div>
+                    </div>
+                    <div class="procedure-step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <h4>Call for Help</h4>
+                            <p>Dial 911 or the fire department immediately. Provide your exact location and nature of the fire.</p>
+                        </div>
+                    </div>
+                    <div class="procedure-step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <h4>Evacuate Immediately</h4>
+                            <p>Use stairs, not elevators. Crawl low under smoke. Feel doors before opening - if hot, use another exit.</p>
+                        </div>
+                    </div>
+                    <div class="procedure-step">
+                        <span class="step-number">4</span>
+                        <div class="step-content">
+                            <h4>Fight Small Fires</h4>
+                            <p>Only if safe to do so, use a fire extinguisher (PASS: Pull, Aim, Squeeze, Sweep). Otherwise, evacuate.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="procedure-list" id="medical-procedure" style="display: none;">
+                    <div class="procedure-step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <h4>Check the Scene</h4>
+                            <p>Ensure the area is safe for you to approach. Check for any dangers like traffic, fire, or electricity.</p>
+                        </div>
+                    </div>
+                    <div class="procedure-step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <h4>Call for Help</h4>
+                            <p>Dial 911 immediately. Tell them the location, what happened, number of victims, and condition.</p>
+                        </div>
+                    </div>
+                    <div class="procedure-step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <h4>Provide Basic Care</h4>
+                            <p>If trained, provide CPR or first aid. Otherwise, keep the person calm and comfortable until help arrives.</p>
+                        </div>
+                    </div>
+                    <div class="procedure-step">
+                        <span class="step-number">4</span>
+                        <div class="step-content">
+                            <h4>Prepare for Arrival</h4>
+                            <p>Clear a path for emergency vehicles. Have someone wait outside to guide responders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Locations Map -->
+    <section class="emergency-map">
+        <div class="container">
+            <h2 class="section-title">Nearest Emergency Facilities</h2>
+            
+            <div class="map-container">
+                <div class="map-grid">
+                    <div class="map-sidebar">
+                        <h3 style="margin-bottom: 20px; color: var(--dark);">Emergency Facilities near Barangay 118</h3>
+                        <ul class="location-list">
+                            <li class="location-item active" data-location="medical">
+                                <div class="location-name">Caloocan City Medical Center</div>
+                                <div class="location-address">8th Avenue, Caloocan City</div>
+                                <div class="location-distance">Approx. 2.5 km from Barangay 118</div>
+                            </li>
+                            <li class="location-item" data-location="fire">
+                                <div class="location-name">Caloocan Fire Station Main</div>
+                                <div class="location-address">9th Avenue, Caloocan City</div>
+                                <div class="location-distance">Approx. 3 km from Barangay 118</div>
+                            </li>
+                            <li class="location-item" data-location="police">
+                                <div class="location-name">Caloocan Police Station 1</div>
+                                <div class="location-address">10th Avenue, Caloocan City</div>
+                                <div class="location-distance">Approx. 2 km from Barangay 118</div>
+                            </li>
+                            <li class="location-item" data-location="barangay">
+                                <div class="location-name">Barangay 118 Hall</div>
+                                <div class="location-address">3rd Avenue, Grace Park, Caloocan</div>
+                                <div class="location-distance">Within Barangay 118</div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="map-placeholder">
+                        <div style="text-align: center;">
+                            <i class="fas fa-map-marked-alt" style="font-size: 3rem; margin-bottom: 20px; display: block; color: var(--primary);"></i>
+                            <h3 style="margin-bottom: 10px; color: var(--dark);">Emergency Facilities Map</h3>
+                            <p>Map showing nearest hospitals, fire stations, and police stations</p>
+                            <p style="font-size: 0.9rem; margin-top: 20px; color: var(--gray);">
+                                <i class="fas fa-info-circle"></i> Interactive map would be integrated here
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Kit -->
+    <section class="emergency-kit">
+        <div class="container">
+            <h2 class="section-title">Emergency Preparedness Kit</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; color: var(--gray);">
+                Prepare an emergency kit with these essential items. Store in an accessible location and check regularly.
+            </p>
+            
+            <div class="kit-grid">
+                <div class="kit-item">
+                    <div class="kit-icon">
+                        <i class="fas fa-medkit"></i>
+                    </div>
+                    <h4>First Aid Kit</h4>
+                    <p>Bandages, antiseptic, pain relievers, prescription medications, medical gloves</p>
+                </div>
+                
+                <div class="kit-item">
+                    <div class="kit-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h4>Water & Food</h4>
+                    <p>3-day supply of water (1 gallon per person per day) and non-perishable food</p>
+                </div>
+                
+                <div class="kit-item">
+                    <div class="kit-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Light & Power</h4>
+                    <p>Flashlights, extra batteries, portable charger, battery-powered radio</p>
+                </div>
+                
+                <div class="kit-item">
+                    <div class="kit-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h4>Important Documents</h4>
+                    <p>Copies of IDs, insurance papers, medical records in waterproof container</p>
+                </div>
+                
+                <div class="kit-item">
+                    <div class="kit-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h4>Clothing & Bedding</h4>
+                    <p>Extra clothing, sturdy shoes, blankets, rain gear for each family member</p>
+                </div>
+                
+                <div class="kit-item">
+                    <div class="kit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Tools & Supplies</h4>
+                    <p>Multi-tool, whistle, dust masks, plastic sheeting, duct tape, local maps</p>
+                </div>
+                
+                <div class="kit-item">
+                    <div class="kit-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h4>Sanitation & Hygiene</h4>
+                    <p>Personal hygiene items, moist towelettes, garbage bags, plastic ties</p>
+                </div>
+                
+                <div class="kit-item">
+                    <div class="kit-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>Communication</h4>
+                    <p>List of emergency contacts, charged phone, cash (small bills), coins</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container" id="footer-container">
+        <div class="footer-content" id="footer-content">
+
+            <!-- Left Column: System Info -->
+            <div class="footer-column" id="footer-system-column">
+                <h3 id="footer-title" class="footer-title">
+                    Barangay 118 Online System
+                </h3>
+                <p id="footer-description" class="footer-description">
+                    Secure and efficient online services for Barangay 118. Connecting our community through technology.
+                </p>
+            </div>
+
+            <!-- Center Footer -->
+            <div class="footer-center" id="footer-center">
+                <div class="footer-row" id="footer-row">
+
+                    <!-- Contact Info -->
+                    <div class="footer-column" id="footer-contact-column">
+                        <h3 id="footer-contact-title">Contact Info</h3>
+
+                        <ul id="footer-contact-info" class="footer-contact-info">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span id="footer-address-line1">
+                                    402 2nd St, Grace Park East, Caloocan
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-pin"></i>
+                                <span id="footer-address-line2">
+                                    Metro Manila, Philippines
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span id="footer-phone">
+                                    (02) 8123-4567
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span id="footer-email">
+                                    info@barangay118.gov.ph
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span id="footer-office-hours">
+                                    Mon–Fri: 8:00 AM – 5:00 PM
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Social / Links -->
+                    <div class="footer-column" id="footer-links-column">
+                        <h3 id="footer-social-title">Follow Us</h3>
+
+                        <ul class="footer-links" id="footer-social-links">
+                            <li id="footer-facebook-item">
+                                <i class="fab fa-facebook"></i>
+                                <a
+                                    id="footer-facebook-link"
+                                    href="https://facebook.com/barangay118"
+                                    target="_blank"
+                                >
+                                    <span id="footer-facebook-text">
+                                        Barangay 118 Facebook
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li id="footer-messenger-item">
+                                <i class="fab fa-facebook-messenger"></i>
+                                <a
+                                    id="footer-messenger-link"
+                                    href="https://m.me/barangay118"
+                                    target="_blank"
+                                >
+                                    <span id="footer-messenger-text">
+                                        Messenger Chat
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright" id="footer-copyright">
+            <p id="copyright-text">
+                &copy; 2025 Barangay 118 Online System. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <script src="Emergency.js"></script>
+
+</body>
+</html>

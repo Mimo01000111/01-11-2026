@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay 118 News & Announcements</title>
+    <link rel="shortcut icon" type="image/png" href="Logo-Favicon-removebg-preview.png">
+    <meta name="description" content="Latest news, updates, and announcements from Barangay 118">
+    <meta name="keywords" content="barangay news, community updates, announcements, barangay 118 news">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="News.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <!-- LOGO -->
+                <a href="index.html" id="home-logo" class="logo">
+                    <img src="Logo-Favicon-removebg-preview.png" alt="Barangay 118 Logo" class="logo-image">
+                    <h1 id="system-name">BARANGAY 118 ONLINE SYSTEM</h1>
+                </a>
+
+                <!-- NAVIGATION -->
+                <nav class="nav-links">
+                    <a href="index.html" aria-label="Home page">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="AboutUs.html" aria-label="About Barangay 118 page">
+                        <i class="fas fa-info-circle"></i>
+                        <span>About Us</span>
+                    </a>
+                    <a href="News.html" class="active" aria-label="Barangay News page">
+                        <i class="fas fa-newspaper"></i>
+                        <span>News</span>
+                    </a>
+                    <a href="Emergency.html" aria-label="Barangay Emergency page">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Emergency</span>
+                    </a>
+                    <a href="CreateAnAccount.html" aria-label="Create an account page">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Create Account</span>
+                    </a>
+                    <a href="LogIn.html" aria-label="Login page">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span>Login</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<!-- News Hero - IDENTICAL structure -->
+<section class="news-hero">
+    <div class="news-hero-content">
+        <h1 id="news-hero-title">News & Announcements</h1>
+        <p id="news-hero-description">Latest updates, advisories, and community news for Barangay 118.</p>
+    </div>
+</section>
+
+    <!-- Featured News Section -->
+    <section class="featured-news-section">
+        <div class="container">
+            <h2 style="margin-bottom: 30px; color: var(--dark);">Featured News</h2>
+            <div class="featured-news-grid" id="featured-news-container">
+                <!-- Featured news will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- All News Section -->
+    <section class="news-page-content">
+        <div class="container">
+            <h2 style="margin-bottom: 30px; color: var(--dark);">Latest News</h2>
+            <div class="news-grid-container" id="news-container">
+                <!-- News cards will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container" id="footer-container">
+        <div class="footer-content" id="footer-content">
+
+            <!-- Left Column: System Info -->
+            <div class="footer-column" id="footer-system-column">
+                <h3 id="footer-title" class="footer-title">
+                    Barangay 118 Online System
+                </h3>
+                <p id="footer-description" class="footer-description">
+                    Secure and efficient online services for Barangay 118. Connecting our community through technology.
+                </p>
+            </div>
+
+            <!-- Center Footer -->
+            <div class="footer-center" id="footer-center">
+                <div class="footer-row" id="footer-row">
+
+                    <!-- Contact Info -->
+                    <div class="footer-column" id="footer-contact-column">
+                        <h3 id="footer-contact-title">Contact Info</h3>
+
+                        <ul id="footer-contact-info" class="footer-contact-info">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span id="footer-address-line1">
+                                    402 2nd St, Grace Park East, Caloocan
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-pin"></i>
+                                <span id="footer-address-line2">
+                                    Metro Manila, Philippines
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span id="footer-phone">
+                                    (02) 8123-4567
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span id="footer-email">
+                                    info@barangay118.gov.ph
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span id="footer-office-hours">
+                                    Mon–Fri: 8:00 AM – 5:00 PM
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Social / Links -->
+                    <div class="footer-column" id="footer-links-column">
+                        <h3 id="footer-social-title">Follow Us</h3>
+
+                        <ul class="footer-links" id="footer-social-links">
+                            <li id="footer-facebook-item">
+                                <i class="fab fa-facebook"></i>
+                                <a
+                                    id="footer-facebook-link"
+                                    href="https://facebook.com/barangay118"
+                                    target="_blank"
+                                >
+                                    <span id="footer-facebook-text">
+                                        Barangay 118 Facebook
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li id="footer-messenger-item">
+                                <i class="fab fa-facebook-messenger"></i>
+                                <a
+                                    id="footer-messenger-link"
+                                    href="https://m.me/barangay118"
+                                    target="_blank"
+                                >
+                                    <span id="footer-messenger-text">
+                                        Messenger Chat
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright" id="footer-copyright">
+            <p id="copyright-text">
+                &copy; 2025 Barangay 118 Online System. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- News Modal -->
+    <div class="news-modal" id="news-modal">
+        <div class="news-modal-content">
+            <div class="news-modal-header">
+                <h2 class="news-modal-title" id="news-modal-title"></h2>
+                <button class="news-modal-close" id="news-modal-close">&times;</button>
+            </div>
+            <div class="news-modal-meta">
+                <div class="news-modal-date" id="news-modal-date"></div>
+                <div class="news-modal-category" id="news-modal-category"></div>
+            </div>
+            <img class="news-modal-image" id="news-modal-image" src="" alt="">
+            <div class="news-modal-body" id="news-modal-body"></div>
+            <div class="news-modal-footer">
+                <button class="newsletter-btn" id="news-modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // News data - You can expand this with more news
+        const newsData = [
+            {
+                id: 1,
+                title: "Japan builds new facility for Grace Park Health Center in Caloocan (2025)",
+                excerpt: "The Embassy of Japan provided around PHP 6 million to construct the new Grace Park Health Center in Caloocan City.",
+                content: "On March 10, 2025, Embassy of Japan Second Secretary MATSUSHIGE Tomoaki attended the turnover ceremony for the 'Project for the Construction of the Grace Park Health Center in Caloocan City.' Japan allocated USD 120,477 (≈ PHP 6 million) under the Official Development Assistance – Grant Assistance for Grass-roots Human Security Projects (GGP). This new facility replaces the old, flood-prone building to ensure safer, cleaner, and modern healthcare services for approximately 9,600 patients annually.",
+                date: "March 10, 2025",
+                image: "https://www.ph.emb-japan.go.jp/files/100808323.jpg",
+                category: "Community",
+                readTime: "5 min",
+                isFeatured: true
+            },
+            {
+                id: 2,
+                title: "Caloocan Fire: 1 PWD dead, 50 families displaced",
+                excerpt: "A person with disability died after a large fire broke out in Barangay 118, Grace Park, Caloocan in December 2024.",
+                content: "According to Caloocan BFP, the fire started around 2:56 AM at 4th Avenue and quickly spread due to houses being built closely together. 'A PWD died in a fire which razed about 20 houses in Caloocan City…' GMA News reported.",
+                date: "December 2024",
+                image: "https://images.gmanews.tv/webpics/2024/12/caloocan_fire_12-29-24_2024_12_29_18_34_08.jpg",
+                category: "Safety",
+                readTime: "3 min",
+                isFeatured: true
+            },
+            {
+                id: 3,
+                title: "New Barangay Health Center in Brgy. 118-120, Caloocan",
+                excerpt: "SM Foundation turned over the newly improved Barangay Health Center of Grace Park (Brgy. 118-120) in Caloocan City days before 2024 arrived.",
+                content: "SM Foundation and its partners led this renovation project to turn the facility into a more comfortable and efficient clinic. 'A few days before New Year's Day, SM Foundation turned over…' according to Market Monitor.",
+                date: "January 16, 2024",
+                image: "https://i0.wp.com/marketmonitor.com.ph/wp-content/uploads/2024/01/SMFI-image2.jpg?resize=618%2C927&ssl=1",
+                category: "Health",
+                readTime: "4 min",
+                isFeatured: false
+            },
+            {
+                id: 4,
+                title: "Barangay 118 Community Clean-up Drive Success",
+                excerpt: "Over 200 residents participated in the monthly community clean-up drive last November.",
+                content: "The Barangay 118 community clean-up drive was a huge success with over 200 residents volunteering to clean the streets and public areas. The event was organized by the Barangay Council and supported by local businesses. Waste collected was properly segregated and disposed of in accordance with city regulations.",
+                date: "November 24, 2024",
+                image: "https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                category: "Community",
+                readTime: "3 min",
+                isFeatured: false
+            },
+            {
+                id: 5,
+                title: "Free Medical Check-up for Senior Citizens",
+                excerpt: "Barangay 118 offers free medical check-ups for all senior citizens every Monday.",
+                content: "Starting this month, Barangay 118 Health Center will offer free medical check-ups for all registered senior citizens every Monday from 8 AM to 12 PM. The program includes blood pressure monitoring, blood sugar tests, and basic consultations with the barangay health workers.",
+                date: "November 15, 2024",
+                image: "https://images.unsplash.com/photo-1586773860418-dc22f8b874bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                category: "Health",
+                readTime: "2 min",
+                isFeatured: false
+            },
+            {
+                id: 6,
+                title: "New Street Lights Installed in 3rd Avenue",
+                excerpt: "Improved street lighting installed to enhance safety in Barangay 118.",
+                content: "To improve safety and security, new LED street lights have been installed along 3rd Avenue. The project was funded through the barangay's infrastructure budget and aims to reduce accidents and deter criminal activities during night time.",
+                date: "October 30, 2024",
+                image: "https://images.unsplash.com/photo-1511749781475-2d806339c0c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                category: "Development",
+                readTime: "3 min",
+                isFeatured: false
+            },
+            {
+                id: 7,
+                title: "Barangay 118 General Assembly Results",
+                excerpt: "Residents approved new community projects during the recent general assembly.",
+                content: "During the Barangay 118 General Assembly held last November 11, residents approved several community projects including the renovation of the barangay plaza, installation of CCTV cameras in strategic locations, and the establishment of a community library. The projects are scheduled to start in early 2025.",
+                date: "November 12, 2024",
+                image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                category: "Events",
+                readTime: "4 min",
+                isFeatured: false
+            },
+            {
+                id: 8,
+                title: "Anti-Dengue Fogging Operations Schedule",
+                excerpt: "Barangay 118 announces schedule for anti-dengue fogging operations.",
+                content: "To combat dengue fever, Barangay 118 will conduct anti-dengue fogging operations in all zones starting next week. Residents are advised to cover food and water containers during the fogging. The schedule will be posted in all barangay halls and announced through our official Facebook page.",
+                date: "October 25, 2024",
+                image: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                category: "Health",
+                readTime: "2 min",
+                isFeatured: false
+            }
+        ];
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            loadNews();
+            setupEventListeners();
+            setupCategoryFilters();
+        });
+
+        // Load and display news
+        function loadNews() {
+            // Load featured news
+            const featuredNews = newsData.filter(news => news.isFeatured);
+            const regularNews = newsData.filter(news => !news.isFeatured);
+            
+            // Display featured news
+            const featuredContainer = document.getElementById('featured-news-container');
+            if (featuredNews.length > 0) {
+                const mainFeatured = featuredNews[0];
+                const sideFeatured = featuredNews.slice(1);
+                
+                featuredContainer.innerHTML = `
+                    <div class="main-featured news-card">
+                        <div class="news-image">
+                            <img src="${mainFeatured.image}" alt="${mainFeatured.title}" onerror="this.src='https://via.placeholder.com/800x400?text=News+Image'">
+                            <div class="news-badge">${mainFeatured.category}</div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">
+                                <i class="far fa-calendar"></i> ${mainFeatured.date}
+                            </div>
+                            <h3 class="news-title">${mainFeatured.title}</h3>
+                            <p class="news-excerpt">${mainFeatured.excerpt}</p>
+                            <div class="news-meta">
+                                <a href="#" class="read-more-btn" data-news-id="${mainFeatured.id}">
+                                    Read Full Story <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <span class="read-time">
+                                    <i class="far fa-clock"></i> ${mainFeatured.readTime}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-featured">
+                        ${sideFeatured.map(news => `
+                            <div class="news-card">
+                                <div class="news-image">
+                                    <img src="${news.image}" alt="${news.title}" onerror="this.src='https://via.placeholder.com/400x200?text=News+Image'">
+                                    <div class="news-badge">${news.category}</div>
+                                </div>
+                                <div class="news-content">
+                                    <div class="news-date">
+                                        <i class="far fa-calendar"></i> ${news.date}
+                                    </div>
+                                    <h3 class="news-title">${news.title}</h3>
+                                    <p class="news-excerpt">${news.excerpt}</p>
+                                    <div class="news-meta">
+                                        <a href="#" class="read-more-btn" data-news-id="${news.id}">
+                                            Read More <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+
+            // Display all news
+            displayNews(regularNews);
+        }
+
+        // Display news in grid
+        function displayNews(newsArray) {
+            const container = document.getElementById('news-container');
+            if (!container) return;
+
+            container.innerHTML = newsArray.map(news => `
+                <div class="news-card" data-category="${news.category.toLowerCase()}">
+                    <div class="news-image">
+                        <img src="${news.image}" alt="${news.title}" onerror="this.src='https://via.placeholder.com/350x200?text=News+Image'">
+                        <div class="news-badge">${news.category}</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <i class="far fa-calendar"></i> ${news.date}
+                        </div>
+                        <h3 class="news-title">${news.title}</h3>
+                        <p class="news-excerpt">${news.excerpt}</p>
+                        <div class="news-meta">
+                            <a href="#" class="read-more-btn" data-news-id="${news.id}">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <span class="read-time">
+                                <i class="far fa-clock"></i> ${news.readTime}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Setup category filters
+        function setupCategoryFilters() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const newsCards = document.querySelectorAll('.news-card');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    // Filter news
+                    if (category === 'all') {
+                        // Show all regular news (non-featured)
+                        const regularNews = newsData.filter(news => !news.isFeatured);
+                        displayNews(regularNews);
+                    } else {
+                        // Filter by category
+                        const filteredNews = newsData.filter(news => 
+                            !news.isFeatured && 
+                            news.category.toLowerCase() === category
+                        );
+                        displayNews(filteredNews);
+                    }
+                });
+            });
+        }
+
+        // Show news modal
+        function showNewsModal(newsId) {
+            const newsItem = newsData.find(item => item.id === newsId);
+            if (newsItem) {
+                document.getElementById('news-modal-title').textContent = newsItem.title;
+                document.getElementById('news-modal-date').innerHTML = `<i class="far fa-calendar"></i> ${newsItem.date}`;
+                document.getElementById('news-modal-category').textContent = newsItem.category;
+                document.getElementById('news-modal-image').src = newsItem.image;
+                document.getElementById('news-modal-image').alt = newsItem.title;
+                document.getElementById('news-modal-body').innerHTML = `
+                    <p>${newsItem.content}</p>
+                `;
+                document.getElementById('news-modal').style.display = 'flex';
+            }
+        }
+
+        // Close news modal
+        function closeNewsModal() {
+            document.getElementById('news-modal').style.display = 'none';
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Read more buttons
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('read-more-btn') || 
+                    e.target.parentElement.classList.contains('read-more-btn')) {
+                    e.preventDefault();
+                    const newsId = parseInt(e.target.getAttribute('data-news-id') || 
+                                  e.target.parentElement.getAttribute('data-news-id'));
+                    showNewsModal(newsId);
+                }
+                
+                // News cards click
+                if (e.target.closest('.news-card') && !e.target.classList.contains('read-more-btn') && 
+                    !e.target.parentElement.classList.contains('read-more-btn')) {
+                    e.preventDefault();
+                    const newsCard = e.target.closest('.news-card');
+                    const newsId = newsCard.querySelector('.read-more-btn')?.getAttribute('data-news-id');
+                    if (newsId) {
+                        showNewsModal(parseInt(newsId));
+                    }
+                }
+            });
+            
+            // Modal close buttons
+            const newsModalClose = document.getElementById('news-modal-close');
+            if (newsModalClose) {
+                newsModalClose.addEventListener('click', closeNewsModal);
+            }
+            
+            const newsModalCloseBtn = document.getElementById('news-modal-close-btn');
+            if (newsModalCloseBtn) {
+                newsModalCloseBtn.addEventListener('click', closeNewsModal);
+            }
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', (e) => {
+                if (e.target === document.getElementById('news-modal')) {
+                    closeNewsModal();
+                }
+            });
+            
+        }
+    </script>
+</body>
+</html>
